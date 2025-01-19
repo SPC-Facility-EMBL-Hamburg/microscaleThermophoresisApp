@@ -23,6 +23,10 @@ shinyUI(dashboardPage(title = "ThermoAffinity",
       ),
   
   dashboardBody(theme_grey_light,
+
+    includeHTML("www/banner.html"),
+    includeScript("www/banner.js"),
+
     tabItems(
       tabItem(tabName = "menu_input",
         fluidRow(

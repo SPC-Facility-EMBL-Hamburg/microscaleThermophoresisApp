@@ -18,9 +18,7 @@ function(input, output, session) {
   
   # ... Initialize python class ...
   mst <- MST_fit()
-  
-  welcome_message() 
-  
+
   source(paste0(base_dir,"reactives/load_input_reactives.R"), local = T)
   source(paste0(base_dir,"reactives/reactives.R"           ), local = T)
   source(paste0(base_dir,"reactives/download_reactives.R"  ), local = T)
