@@ -37,14 +37,14 @@ box(title = "Input", width = 3, solidHeader = T, status = "primary",
       column(6, p(HTML("<b>Cold Region</b>"),
                    span(shiny::icon("info-circle"), id = "info_uu1-3"),
                    
-                   sliderInput("cold_range", NULL,min = -10, max = 0,value = c(-1,0)),
+                   sliderInput("cold_range", NULL,min = -10, max = 0,value = c(-1,0),step=0.5),
                    tippy::tippy_this(elementId = "info_uu1-3",
                                      tooltip = "Select the cold region",placement = "right"))),
       
       column(6, p(HTML("<b>Hot Region</b>"),
                   span(shiny::icon("info-circle"), id = "info_uu1-34"),
                   
-                  sliderInput("hot_range", NULL,min = 5, max = 30,value = c(20,21)),
+                  sliderInput("hot_range", NULL,min = 5, max = 30,value = c(20,21),step=0.5),
                   tippy::tippy_this(elementId = "info_uu1-34",
                                     tooltip = "Select the hot region",placement = "right"))),
       
